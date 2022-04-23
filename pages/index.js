@@ -11,6 +11,10 @@ export default function Home(props) {
     const router = useRouter()
     const { canceled, success } = router.query
 
+    
+console.log(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
+console.log(process.env.STRIPE_SECRET_KEY)
+    
     return (
         <>
             <Head>
